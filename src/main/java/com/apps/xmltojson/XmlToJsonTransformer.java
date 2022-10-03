@@ -22,7 +22,7 @@ public class XmlToJsonTransformer {
 	public static void main(String[] args) {
 		XmlToJsonService provider = null;
 		
-		// validate inbound parameters
+		// validate in bound parameters
 		if(args.length != 2) {
 			System.err.println("Please pass in input xml file name and output json file names.");
 			System.exit(-1);
