@@ -2,6 +2,8 @@ package com.apps.xmltojson.services;
 
 import	com.apps.xmltojson.transformers.Patients;
 
+import	org.springframework.stereotype.Service;
+
 import 	javax.xml.bind.JAXB;
 import  java.lang.Thread;
 import 	java.io.File;
@@ -17,6 +19,7 @@ import	org.slf4j.LoggerFactory;
 //  driver user properties file to instantiate the provider
 //
 
+@Service
 public class XmlToJsonServiceProvider implements XmlToJsonService {
 	private static final Logger logger = LoggerFactory.getLogger(XmlToJsonServiceProvider.class);
 	

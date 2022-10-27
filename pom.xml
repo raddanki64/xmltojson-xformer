@@ -20,6 +20,12 @@
 
 	<dependencies>
 		<dependency>
+  			<groupId>org.apache.camel.springboot</groupId>
+  			<artifactId>camel-file-starter</artifactId>
+  			<version>3.0.0</version>		
+		</dependency>
+	
+		<dependency>
     		<groupId>javax.xml.bind</groupId>
     		<artifactId>jaxb-api</artifactId>
     		<version>2.1</version>
@@ -127,14 +133,10 @@
                             <manifest>
                                 <addClasspath>true</addClasspath>
                                 <classpathPrefix>lib/</classpathPrefix>
-                                <mainClass>com.apps.xmltojson.XmlToJsonTransformer</mainClass>
+                                <mainClass>com.apps.xmltojson.XmlToJsonSpringBootStarter</mainClass>
                             </manifest>
                             <manifestEntries>
-                                <Class-Path>.</Class-Path>
-                                <Class-Path>jackson-annotations-2.13.4.jar</Class-Path>
-                                <Class-Path>jackson-core-2.13.4.jar</Class-Path>
-                                <Class-Path>jackson-databind-2.13.4.jar</Class-Path>                               
-                                <Class-Path>slf4j-api-2.0.3.jar</Class-Path>                                                                                                                            
+                                <Class-Path>.</Class-Path>                                                                                                                         
                             </manifestEntries>
                         </archive>
                         <finalName>xmltojson</finalName>
