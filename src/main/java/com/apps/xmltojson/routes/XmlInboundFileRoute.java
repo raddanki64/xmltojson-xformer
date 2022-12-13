@@ -46,7 +46,7 @@ public class XmlInboundFileRoute extends SpringRouteBuilder {
 				logger.info("Processing inbound file {}", exchange.getIn().toString());
 				
 				try {
-				xmlToJsonServiceProvider.process(inputFilename, outputFilename);
+					xmlToJsonServiceProvider.process(inputFilename, outputFilename);
 				}
 				catch(Exception e) {
 					e.printStackTrace(System.err);
